@@ -20,6 +20,10 @@ git submodule init && git submodule update
 
 `docker run -p 8080:8080 metacpan/metacpan-explorer`
 
+### Or, via compose:
+
+`docker compose up -d`
+
 ###View in your browser:
 
 http://localhost:8080/

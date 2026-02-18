@@ -1,0 +1,12 @@
+---
+services:
+  explorer:
+    image: metacpan/metacpan-explorer
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: node server.js
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
